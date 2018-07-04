@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head<title>FCC Survey Form| Proj</title></head
+<body id="main">
+<h1 id="title"> Personal Information Purloin Survey Form</h1>
+<p id="description" > Thank you for taking the time to enter all of your personal information. Information collected in this page is strictly for business use and is sent over only the most secure unencrypted servers money can buy! We spared no expense!</p>
+<form id="survey-form">
+<label id="name-label" for="name" > Name:</label>
+<input id="name" type="text" name="name" placeholder="Name" required autofocus>
+<br> <br>
+<label id="email-label" for="email"> E-mail Address:</label>
+<input id="email" name="email" type="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail Address" required>
+<br> <br>
+<label id="number-label" for="number" > I.D. Number:</label>
+<input id="number" name="number" type="number" placeholder="9-digit I.D. Number" required min="111111111" max="999999999">
+<br> <br >
+<p> Average yearly income</p>
+<select id="dropdown">
+<option value="10000"> $10000</option>
+<option value="20000"> $20000</option>
+<option value="3000"> $30000</option>
+<option value="40000"> $40000 + </option>
+<div >
+<input type="radio" name="bank" value="chase" > Chase Bank<br>
+<input type="radio" name="bank" value="boa" > Bank of America<br>
+<input type="radio" name="bank" value="citigroup" > Citi Bank<br>
+<input type="radio" name="bank" value="wellsfargo" > Wells Fargo<br>
+</div>
+<br> <br>
+<input type="checkbox" name="assets" value="stocks" > I own stocks<br>
+<input type="checkbox" name="assets" value="bonds" > I own bonds<br>
+<input type="checkbox" name="assets" value="real" > I own real eastate<br>
+<br> <br>
+Comments or concerns?<br>
+<textarea rows="4" columns="50" > </textarea>
+<br>
+<input id="submit" type="submit" name="submit">
+</form>
+</body>
+</html>
