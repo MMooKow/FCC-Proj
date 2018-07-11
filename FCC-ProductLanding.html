@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="FCC-ProductLanding.css" />
 </head>
 <body id="main">
+    <!--Un-moving box at top of screen that contains icon, links, and name.-->
     <header id="header">
         <div class="box">
             <div id="flex-banner">
@@ -13,23 +14,25 @@
                 <h1 id="h1-2">Chess Pieces</h1>
             </div>
             <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link"><a href="#">Free gift!</a></li>
-                    <li class="nav-link"><a href="#video">Learn to play!</a></li>
-                    <li class="nav-link"><a href="#flex-container">Buy now!</a></li>
-                </ul>
+                <a href="#spacer" class="nav-link">Free gift!</a>
+                <a href="#video" class="nav-link">Learn to play!</a>
+                <a href="#flex-container" class="nav-link">Buy now!</a>
             </nav>
         </div>
     </header>
+    <!--Empty box to keep items from being covered by header.-->
     <div id="spacer"></div>
-    <form id="form">
-        <label id="email">Enter your e-mail to recieve free chess tip from our pro staff and up to 10% off select orders with free shipping!</label>
+    <!--Form to enter email and submit to FCC url.-->
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+        <label for="email">Enter your e-mail to recieve free chess tips from our pro staff and up to 10% off select orders with free shipping!</label>
         <input id="email" type="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail Address" required>
-        <input action="https://www.freecodecamp.com/email-submit" method="post" type="submit" id="submit">
+        <input type="submit" id="submit">
         </from>
         <br> <br>
-        <iframe height="300" width="340" id="video" src="https://www.youtube.com/embed/watch?v=t-uwGvx4V_A"></iframe>
+        <!--Embedded YouTube how-to video-->
+        <iframe height="400" width="480" id="video" src="https://www.youtube.com/embed/t-uwGvx4V_A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <br>
+        <!--3 vertical boxes that display items and prices.-->
         <div id="flex-container">
             <div class="flex-obj"><h2>Wood + Board</h2><br><h2>$130</h2></div>
             <div class="flex-obj"><h2>Brass + Board</h2><br><h2>$500</h2></div>
