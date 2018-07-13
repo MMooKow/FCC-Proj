@@ -10,7 +10,7 @@
 
     #spacer {
         height: 180px;
-        position: block;
+        display: block;
     }
 
     .box {
