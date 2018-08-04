@@ -5,6 +5,14 @@
         margin: 0px;
         background: linear-gradient(to top, #3C3B3F, #554F35);
     }
+
+    code, li {
+        background-color: #1E1E27;
+    }
+
+    li {
+        width: 30%;
+    }
     /* Start navbar
      When hovered will drop down to show internal links
   */
@@ -119,8 +127,12 @@
         height: 100vh;
     }
 
-    code {
-        background-color: #6E6D6F;
+    code, li {
+        background-color: #1E1E27;
+    }
+
+    li {
+        width: 30%;
     }
 
     #spacer {
