@@ -7,7 +7,7 @@
 <body id="grid-container">
         <div id="spacer"></div>
         <nav id="navbar">
-            <i class="far fa-bars"></i>
+            <div id="nav-div"> <i class="far fa-bars"></i> </div>
             <!--Nav bar down left side in desktop and dropdown in mobile-->
             <div class="nav-content">
                 <header id="nav-head">Page Sections</header><br /><hr />
@@ -16,7 +16,7 @@
                 <a class="nav-link" href="#Basic_Structure">Basic Structure</a><br /><br />
                 <a class="nav-link" href="#Adding_Text">Adding Text</a><br /><br />
                 <a class="nav-link" href="#Other_Elements">Other Elements</a><br /><br />
-                <a class="nav-link" href="#Viewing_Your_Website">Viewing Your Website</a>
+                <a class="nav-link" href="#How_To_View">How To View</a>
             </div>
         </nav>
         <br /> <br />
@@ -33,53 +33,79 @@
                 <header>Basic Structure</header><hr class="section-div" />
                 <h2>Template</h2>
                 <p>
-                    To begin an HTML page you will need three different elements. These are html, head, and body. The html element is the container for everyting else. the head and body are both placed withing html but not within each other.
+                    To begin an HTML page you will need three different elements. These are html, head, and body. The html element is the container for everyting else. The head and body are both placed within the html element but not within each other.
                 </p>
-                <p>
+                <code>
                     &lthtml&gt <br />
-                    &lthead&gt Metadata (non-visible content) &lt/head&gt <br />
-                    &ltbody&gt <br /><br />Visible page content<br /><br /> &lt/body&gt <br />
+                    &lthead&gt
+                </code>
+                Metadata (non-visible content)
+                <code>
+                    &lt/head&gt <br />
+                    &ltbody&gt <br /><br />
+                </code>
+                Visible page content<br /><br />
+                <code>
+                    &lt/body&gt <br />
                     &lt/html&gt
-                </p>
+                </code>
                 <h2>Elements</h2>
                 <ul>
-                    <li>&lthtml&gt &lt/html&gt</li>
-                    <li>&lthead&gt &lt/head&gt</li>
-                    <li>&ltbody&gt &lt/body&gt</li>
-                    <li>&ltbr /&gt</li>
-                    <li>&ltheader&gt &lt/header&gt</li>
+                    <code><li>&lthtml&gt &lt/html&gt</li></code>
+                    <code><li>&lthead&gt &lt/head&gt</li></code>
+                    <code><li>&ltbody&gt &lt/body&gt</li></code>
+                    <code><li>&ltbr /&gt</li></code>
+                    <code><li>&ltheader&gt &lt/header&gt</li></code>
                 </ul>
                 <p>
                     A page in HTML is made up of nested elements. These elements, also called "tags", are enclosed in brackets. This is shown in the list above.
                 </p>
                 <p>
-                    In general tags must be opened and closed as in the first three items in this list. However, some elements like &ltbr /&gt are empty or self-closing and so not need a seperate closing tag.
+                    In general tags must be opened and closed as in the first three items in this list. However, some elements like <code> &ltbr /&gt </code> are empty or self-closing and so not need a seperate closing tag.
                 </p>
             </section>
             <section class="main-section" id="Adding_Text">
                 <header>Adding Text</header><hr class="section-div" />
                 <h2>Paragraph</h2>
                 <p>
-                    The way most text will be added to your page is with paragraph tags: &ltp&gt Your text here! &lt/p&gt
+                    The way most text will be added to your page is with paragraph tags: <code> &ltp&gt Your text here! &lt/p&gt </code>
                 </p>
                 <h2>Headings</h2>
                 <p>
-                    You will want to add headings in your page to designate different sections of the page or new subjects. You have six headings at your disposal and they differ in size from &lth1&gt (largest) to &lth6&gt (smallest). The text "Adding Text" on this page is using the &lth1&gt tag and the text "Headings" is using the &lth2&gt element.
+                    You will want to add headings in your page to designate different sections of the page or new subjects. You have six headings at your disposal and they differ in size from <code> &lth1&gt </code> (largest) to <code> &lth6&gt </code>(smallest). The text "Adding Text" on this page is using the <code> &lth1&gt </code> tag and the text "Headings" is using the <code> &lth2&gt </code> element.
                 </p>
             </section>
             <section class="main-section" id="Other_Elements">
                 <header>Other Elements</header><hr class="section-div" />
                 <h2>Links</h2>
                 <p>
-                    You can add links to your page using the anchor element: &lta&gt &lt/a&gt. These will show up as blue text that turns purple when clicked on. You specify a destination for the link usging the attribute: href="example.html" and can open the page in a new tab with target="_blank"
+                    You can add links to your page using the anchor element: <code> &lta&gt &lt/a&gt </code>. These will show up as blue text that turns purple when clicked on. Also, links by default are underlined. You specify a destination for the link usging the attribute:
+<pre>
+<code>
+href="example.html"
+</code>
+</pre>
+                    and can open the page in a new tab by adding within the anchor element: <pre><code> target="_blank" </code></pre>
+                </p>
+                <p>
+                    Speaking of other links, <a href="https://www.w3schools.com/html/default.asp" target="_blank" id="w3link">here</a> is a link to W3Schools.com. They have wonderful reference documentation and tutorials for HTML, CSS, and Javascript.
                 </p>
                 <h2>New Lines</h2>
                 <p>
-                    You can begin a new line by using the &ltbr /&gt element. This will move the following text down a single line.
+                    You can begin a new line by using the <code> &ltbr /&gt </code> element. This will move the following text down a single line.
                 </p>
+                <h2> Horizontal lines</h2>
+                <p>
+                    You can add hoizontal lines to use as dividers. You can see examples of this in the text above. The element used for this is:<pre><code> &lthr /&gt <c/code></pre>
+                </p>
+                <h2>Images</h2>
+                <p>
+                    Spice up your page by adding a picture! You can choose a picture from your computer or a link to an image from the internet. The element used for this is:<pre><code> &ltimg src="file name or url" alt="replacement text if image cant be loaded"&gt </code></pre>
+                </p>
+                <img src="https://secure.meetupstatic.com/photos/event/4/c/b/b/600_468259643.jpeg" alt="freecodecamp.com logo" id="img-example" />
             </section>
-            <section class="main-section" id="Viewing_Your_Website">
-                <header>Viewing Your Website</header><hr class="section-div" />
+            <section class="main-section" id="How_To_View">
+                <header>How To View</header><hr class="section-div" />
                 <h2>Viewing locally</h2>
                 <p>
                     To view your new web page on your computer simply locate the file (saved with the .html extension!!) and double click on it. Your default web browser should pull up your page. You will likely want to continue on to a CSS tutorial to spice up the aesthetics of your page.
