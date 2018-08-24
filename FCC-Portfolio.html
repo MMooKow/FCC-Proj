@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="FCC-Portfolio.css" />
+    <script src="FCC-Portfolio.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-TXfwrfuHVznxCssTxWoPZjhcss/hp38gEOH8UPZG/JcXonvBQ6SlsIF49wUzsGno" crossorigin="anonymous">
 </head>
 <body>
@@ -20,25 +21,25 @@
     </div>
     <!--Projects section-->
     <div id="projects">
-        <iframe src="https://codepen.io/mmookow/full/eKQXOg/" class="project-tile" id="tribute"></iframe>
-        <iframe src="https://codepen.io/mmookow/full/zaQKjE/" class="project-tile" id="product-landing"></iframe>
-        <iframe src="https://codepen.io/mmookow/full/zaXWGY/" class="project-tile" id="survey-form"></iframe>
-        <iframe src="https://codepen.io/mmookow/full/XBbwwm/" class="project-tile" id="technical-doc"></iframe>
-        <!--Footer-->
-        <footer>
-            <h2>See full projects list here!</h2>
-            <div id="footer-links">
-                <a href="https://codepen.io/mmookow/" target="_blank">
-                    <i class="fab fa-codepen" id="code-icon"></i>
-                </a>
-                <a href="https://github.com/MMooKow" target="_blank" id="profile-link">
-                    <i class="fab fa-git-square" id="git-icon"></i>
-                </a>
-                <a href="" target="_blank">
-                    <i class="fab fa-linkedin" id="linkedin-link"></i>
-                </a>
-            </div>
-        </footer>
+        <iframe src="https://codepen.io/mmookow/full/eKQXOg/" class="project-tile" id="slider"></iframe>
+        <button id="prev" onclick="prev()"><i class="fas fa-arrow-from-right" class="button"></i></button>
+        <button id="next" onclick="next()"><i class="fas fa-arrow-to-right" class="button"></i> </button>
+    </div>
+    <!--Footer-->
+    <footer>
+        <h2>See full projects list here!</h2>
+        <div id="footer-links">
+            <a href="https://codepen.io/mmookow/" target="_blank">
+                <i class="fab fa-codepen" id="code-icon"></i>
+            </a>
+            <a href="https://github.com/MMooKow" target="_blank" id="profile-link">
+                <i class="fab fa-git-square" id="git-icon"></i>
+            </a>
+            <a href="" target="_blank">
+                <i class="fab fa-linkedin" id="linkedin-link"></i>
+            </a>
+        </div>
+    </footer>
     </div>
 </body>
 </html>
